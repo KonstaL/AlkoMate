@@ -31,3 +31,34 @@ User.prototype.toJSON = function () {
 };
 
 module.exports = User;
+
+
+
+
+
+
+
+// var mongoose = require('mongoose'),
+//   passportLocalMongoose = require('passport-local-mongoose');
+// const findOrCreate = require('mongoose-find-or-create');
+
+// // var userSchema = new mongoose.Schema({
+// //     username: {type: String, unique:true, required: true},
+// //     email: String,
+// //     password: String,
+// //     points: Number,
+// //     resetPasswordToken: String,
+// //     resetPasswordExpires: Date,
+// //     isAdmin: {type: Boolean, value: false}
+// // });
+
+// let userSchema = new mongoose.Schema({
+//   name: String,
+//   userId: String,
+//   updatedAt: { type: Date, default: Date.now }
+// });
+
+// userSchema.plugin(passportLocalMongoose);
+// userSchema.plugin(findOrCreate);
+
+// module.exports = mongoose.model('User', userSchema);
