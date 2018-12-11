@@ -1,5 +1,36 @@
-// const mongoose = require('mongoose');
-// const findOrCreate = require('mongoose-find-or-create');
+const Sequelize = require('sequelize');
+const sequelize = require('../../config/database');
+
+const tableName = 'beverages';
+
+const Beverage = sequelize.define('Beverage', {
+  ean: {
+    type: Sequelize.STRING,
+    unique: true,
+  },
+  name: Sequelize.STRING,
+  brand: Sequelize.STRING,
+  size: Sequelize.INTEGER,
+  strength: Sequelize.INTEGER,
+
+  country: Sequelize.STRING,
+  views: Sequelize.BIGINT,
+  imageUrl: {
+    type: Sequelize.STRING,
+    allowNull: true
+  }
+}, { tableName });
+
+// eslint-disable-next-line
+User.prototype.toJSON = function () {
+  const values = Object.assign({}, this.get());
+
+  return values;
+};
+
+module.exports = Beverage;
+
+
 
 // let drinkSchema = new mongoose.Schema({
 //   originalId: String,
