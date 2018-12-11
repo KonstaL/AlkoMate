@@ -12,5 +12,7 @@
     "Redux"
   ],
   "author": "Konsta Lehtinen",
-  "license": "GPL-3.0"
+  "license": "GPL-3.0",
+  "dependencies": {},
+  "devDependencies": {}
 }
