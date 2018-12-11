@@ -1,4 +1,4 @@
-package com.alkomate;
+package com.alkomate_app;
 
 import android.app.Application;
 
