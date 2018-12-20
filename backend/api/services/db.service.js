@@ -1,4 +1,8 @@
 const database = require('../../config/database');
+const Beverage = require('../models/Beverage');
+const User = require('../models/User');
+const beverageData = require('../dummy-data/beverages.json')
+const userData = require('../dummy-data/users.json')
 
 const dbService = (environment, migrate) => {
   const authenticateDB = () => database.authenticate();
@@ -53,6 +57,15 @@ const dbService = (environment, migrate) => {
     }
   };
 
+  const seedDb = async () => {
+    try {
+      await Beverage.bulkCreate(beverageData);
+      await User.bulkCreate(userData);
+    } catch (err) {
+      return errorDBStart(err);
+    }
+  }
+
   const startStage = async () => {
     try {
       await authenticateDB();
@@ -89,6 +102,7 @@ const dbService = (environment, migrate) => {
     switch (environment) {
       case 'development':
         await startDev();
+        await seedDb();
         break;
       case 'staging':
         await startStage();

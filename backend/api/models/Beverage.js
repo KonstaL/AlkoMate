@@ -22,7 +22,7 @@ const Beverage = sequelize.define('Beverage', {
 }, { tableName });
 
 // eslint-disable-next-line
-User.prototype.toJSON = function () {
+Beverage.prototype.toJSON = function () {
   const values = Object.assign({}, this.get());
 
   return values;

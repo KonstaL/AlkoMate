@@ -1,0 +1,57 @@
+[
+    {
+        "ean": "978020137962",
+        "name": "Beer 1",
+        "brand": "Olvi",
+        "size": 330,
+        "strength": 450,
+        "country": "Finland",
+        "views": 0,
+        "imageUrl": "https://products1.imgix.drizly.com/ci-stella-artois-f4762eb0a31c5839.jpeg?auto=format%2Ccompress&dpr=2&fm=jpeg&h=240&q=20"
+    },
+    {
+        "ean": "9780201324162",
+        "name": "Summer melancholy",
+        "brand": "Sori",
+        "size": 330,
+        "strength": 1200,
+        "country": "Finland",
+        "views": 0
+    },
+    {
+        "ean": "978022529324162",
+        "name": "Some beer",
+        "brand": "Stella",
+        "size": 500,
+        "strength": 640,
+        "country": "Germany",
+        "views": 123
+    },
+    {
+        "ean": "9392512529324162",
+        "name": "Laphroaig 10",
+        "brand": "Laphroaig",
+        "size": 750,
+        "strength": 4000,
+        "country": "United Kingdom",
+        "views": 100000
+    },
+    {
+        "ean": "932529324162",
+        "name": "Soerlie Christmas XO",
+        "brand": "Soerlie",
+        "size": 750,
+        "strength": 4000,
+        "country": "idk",
+        "views": 100000
+    },
+    {
+        "ean": "93926312529324162",
+        "name": "Monopol XO",
+        "brand": "Monopol",
+        "size": 750,
+        "strength": 4000,
+        "country": "France",
+        "views": 100000
+    }
+]

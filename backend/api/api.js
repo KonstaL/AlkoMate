@@ -1,6 +1,3 @@
-/**
- * third party libraries
- */
 const bodyParser = require('body-parser');
 const express = require('express');
 const helmet = require('helmet');
@@ -57,5 +54,7 @@ server.listen(config.port, () => {
     console.error(`NODE_ENV is set to ${environment}, but only production and development are valid.`);
     process.exit(1);
   }
+
+  console.info('Server running on port ', config.port)
   return DB;
 });
