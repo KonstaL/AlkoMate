@@ -1,7 +1,7 @@
 
 import React, {Component, Props} from 'react';
 import {Platform, StyleSheet, Text, View, FlatList, Button, Image} from 'react-native';
-import { Beverage } from './models/Beverage';
+import { Beverage } from '../models/Beverage';
 import { NavigationScreenProp } from 'react-navigation';
 
 interface IProps {

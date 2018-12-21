@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text, View, Image, SectionList} from 'react-native';
-import { Beverage } from './models/Beverage';
+import { Beverage } from '../models/Beverage';
 import { NavigationScreenProp } from 'react-navigation';
 
 

@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, FlatList} from 'react-native';
 import FlatComponent from './FlatComponent';
 
-import {Beverage} from './models/Beverage';
+import {Beverage} from '../models/Beverage';
 import { NavigationScreenProp } from 'react-navigation';
 
 interface IState {

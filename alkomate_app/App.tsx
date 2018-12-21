@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 import {createStackNavigator, createBottomTabNavigator, createAppContainer} from 'react-navigation';
-import HomeScreen from './src/HomeScreen';
-import ListScreen from './src/ListScreen';
-import DetailScreen from './src/BeverageScreen';
+import HomeScreen from './src/components/HomeScreen';
+import ListScreen from './src/components/ListScreen';
+import DetailScreen from './src/components/BeverageScreen';
 
 const HomeStack = createStackNavigator({
   Home: {
