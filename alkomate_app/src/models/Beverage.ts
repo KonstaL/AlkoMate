@@ -6,7 +6,7 @@ export interface Beverage {
     strength: number,
     country: string,
     views: number,
-    imagerUrl?: string,
+    imageUrl?: string,
 }
 
 

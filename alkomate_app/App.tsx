@@ -2,6 +2,8 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View, Image} from 'react-native';
 import {createStackNavigator, createBottomTabNavigator, createAppContainer} from 'react-navigation';
 import HomeScreen from './src/HomeScreen';
+import ListScreen from './src/ListScreen';
+import DetailScreen from './src/BeverageScreen';
 
 const HomeStack = createStackNavigator({
   Home: {
@@ -11,7 +13,10 @@ const HomeStack = createStackNavigator({
 
 const DrinkStack = createStackNavigator({
   Home: {
-    screen: HomeScreen // FIXME: temporary, not the real screen
+    screen: ListScreen // FIXME: temporary, not the real screen
+  },
+  Details: {
+    screen: DetailScreen,
   }
 });
 
