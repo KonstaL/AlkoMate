@@ -6,6 +6,7 @@ import ListScreen from './src/components/ListScreen';
 import DetailScreen from './src/components/BeverageScreen';
 import SignInScreen from './src/components/SignInScreen';
 import AuthLoadingComponent from './src/components/AuthLoading';
+import ProfileComponent from './src/components/Profile';
 
 const HomeStack = createStackNavigator({
   Home: {
@@ -24,7 +25,7 @@ const DrinkStack = createStackNavigator({
 
 const ProfileStack = createStackNavigator({
   Home: {
-    screen: HomeScreen // FIXME: temporary, not the real screen
+    screen: ProfileComponent 
   }
 });
 
