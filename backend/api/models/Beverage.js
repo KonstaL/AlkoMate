@@ -6,6 +6,7 @@ const tableName = 'beverages';
 const Beverage = sequelize.define('Beverage', {
   ean: {
     type: Sequelize.STRING,
+    primaryKey: true,
     unique: true,
   },
   name: Sequelize.STRING,

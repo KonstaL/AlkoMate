@@ -7,6 +7,8 @@ const publicRoutes = {
 
 
   'GET /beverages': 'BeverageController.getAll',
+  'GET /beverages/:ean': 'BeverageController.getOne',
+  'POST /beverages': 'BeverageController.addOne',
 };
 
 module.exports = publicRoutes;

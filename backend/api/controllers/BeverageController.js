@@ -8,16 +8,57 @@ const BeverageController = () => {
     try {
       const beverages = await Beverage.findAll();
 
-      return res.status(200).json({ beverages });
+      res.status(200).json({ beverages });
     } catch (err) {
       console.log(err);
       return res.status(500).json({ msg: 'Internal server error' });
     }
   };
 
+  const getOne = async (req, res) => {
+    try {
+      const beverage = await Beverage.findByPk(req.params.ean);
+
+      if (beverage) {
+        beverage.increment('views');
+        return res.status(200).json(beverage);
+      }
+      return res.status(404).json({}); 
+    } catch (err) {
+      console.log(err);
+      return res.status(500).json({ msg: 'Internal server error' });
+    }
+  };
+
+  const addOne = async (req, res) => {
+    try {
+
+      const beverage = req.body;
+      
+
+      if (isValidBeverage(beverage)) {
+        const resBeverage = await Beverage.create(beverage);
+        return res.status(201).json(resBeverage); 
+      }
+      return res.status(400).json({msg: 'Not a valid beverage'}); 
+    } catch (err) {
+      console.log(err);
+      return res.status(400).json({ msg: 'Beverage already in database' });
+    }
+  }
+
+
+
+  const isValidBeverage = (beverage) => {
+    //Check if EAN is valid and so on
+    return true;
+  }
+
 
   return {
     getAll,
+    getOne,
+    addOne,
   };
 };
 
