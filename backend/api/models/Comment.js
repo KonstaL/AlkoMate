@@ -1,6 +1,23 @@
-// const mongoose = require('mongoose');
-// const findOrCreate = require('mongoose-find-or-create');
+const Sequelize = require('sequelize');
+const sequelize = require('../../config/database');
 
+
+const Comment = sequelize.define('Comment', {
+  title: {
+    type: Sequelize.STRING,
+  },
+  body: {
+    type: Sequelize.TEXT,
+  },
+});
+
+Comment.prototype.toJSON = function () {
+    const values = Object.assign({}, this.get());  
+    return values;
+};
+
+
+module.exports = Comment;
 // const commentSchema = new mongoose.Schema({
 //   text: String,
 //   date: Date,

@@ -1,6 +1,8 @@
 const Sequelize = require('sequelize');
 const bcryptService = require('../services/bcrypt.service');
 const sequelize = require('../../config/database');
+const Beverage = require('./Beverage');
+const Comment = require('./Comment');
 
 const tableName = 'users';
 const hooks = {
@@ -11,14 +13,37 @@ const hooks = {
 
 
 const User = sequelize.define('User', {
+  userName: {
+    type: Sequelize.STRING,
+    unique: true,
+  },
+  firstName: {
+    type: Sequelize.STRING
+  },
+  lastName: {
+    type: Sequelize.STRING
+  },
   email: {
     type: Sequelize.STRING,
     unique: true,
   },
-  password: {
+  gender:{
+    type:   Sequelize.ENUM,
+    values: ['female', 'male', 'other']
+  },
+  country: {
     type: Sequelize.STRING,
   },
+  password: {
+    type: Sequelize.STRING,
+  }
+  // TODO: Birhday, last known location, 
 }, { hooks, tableName });
+
+User.belongsToMany(Beverage, { as: 'drankBeverages', through: 'drank_beverages'});
+User.belongsToMany(Beverage, { as: 'likedBeverages', through: 'liked_beverages'});
+User.belongsToMany(User, { as: 'friends', through: 'user_friends'});
+User.hasMany(Comment, { as: 'comments'});
 
 // eslint-disable-next-line
 User.prototype.toJSON = function () {

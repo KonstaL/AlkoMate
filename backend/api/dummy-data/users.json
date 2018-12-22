@@ -1,41 +1,91 @@
 [
     {
+        "userName": "testUser1",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email642@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser2",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email2345@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser3",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-emai88l@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser4",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-emai536l@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser5",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email61@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser6",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email646@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser7",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email@346idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser8",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email124@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser9",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-email23@idk.com",
         "password": "hunter2"
     },
     {
+        "userName": "testUser10",
+        "firstName": "John",
+        "lastName": "Doe",
+        "gender": "male",
+        "country": "Maleysia",
         "email": "some-emai4@idk.com",
         "password": "hunter2"
     }
