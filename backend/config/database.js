@@ -12,7 +12,7 @@ switch (process.env.NODE_ENV) {
       connection.production.username,
       connection.production.password, {
         host: connection.production.host,
-        dialect: connection.production.dialect,
+        dialect: 'postgres',
         pool: {
           max: 5,
           min: 0,

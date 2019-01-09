@@ -1,0 +1,40 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '9.0'
+
+pod 'React', :path => '../node_modules/react-native'
+pod 'yoga', :path => '../node_modules/react-native/ReactCommon/yoga'
+pod 'RNGoogleSignin', :path => '../node_modules/react-native-google-signin'
+
+pod 'Firebase/Core'
+pod 'Firebase/Auth'
+pod 'GoogleSignIn' 
+
+target 'alkomate_app' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+
+  # Pods for alkomate_app
+  # Manually installed dependencies
+
+  pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+  target 'alkomate_appTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
+
+target 'alkomate_app-tvOS' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for alkomate_app-tvOS
+
+  target 'alkomate_app-tvOSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
