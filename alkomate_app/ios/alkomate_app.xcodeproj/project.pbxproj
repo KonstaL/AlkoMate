@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -23,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		26DCF5831CE14270F80FA7C6 /* libPods-alkomate_app-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 149267F621C040F46B68673A /* libPods-alkomate_app-tvOS.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -40,10 +40,30 @@
 		4B2BC12B00074F97AFE6D003 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EAFEEC03375143FC926E3A01 /* libRNGestureHandler.a */; };
 		6181F7F7342C47AC8FEF298E /* lineawesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C35874705E9E40F9999F8130 /* lineawesome.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		A3F44E6E09814B7FACA68081 /* libRNFirebase.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A61E188F54C14867958F7863 /* libRNFirebase.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
 		B59B45B99F354D1DB1E15C8B /* libRNCamera.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FBE6D19268F457384B25557 /* libRNCamera.a */; };
+		BE7E5A43EDA19DB03ECDB4D8 /* libPods-alkomate_appTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CF178FD7F2BD08B2E2C8ECB /* libPods-alkomate_appTests.a */; };
+		C746EC4C21E0F55C00852181 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C746EC4B21E0F55C00852181 /* GoogleService-Info.plist */; };
 		DD56872DBDB34BC9870029B0 /* lineawesome.svg in Resources */ = {isa = PBXBuildFile; fileRef = 4994225A7CC54F1C937942F0 /* lineawesome.svg */; };
+		E94B8E83472D0152142DF3AF /* libPods-alkomate_app.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D118DC16A1F4441FFA511A6 /* libPods-alkomate_app.a */; };
+		F4828809DC00731CE3CE692D /* libPods-alkomate_app-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 45801B762793DE7FC47B72D1 /* libPods-alkomate_app-tvOSTests.a */; };
 		F54BC532EBF14026AF66F55A /* lineawesome.woff2 in Resources */ = {isa = PBXBuildFile; fileRef = 62A01655E5E24BFBB0C24DC2 /* lineawesome.woff2 */; };
+		5F8A716F4C454DCFACBCF9DC /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C0B84B835A124191953E5BFE /* AntDesign.ttf */; };
+		F9831BBA258C47D5A6E07654 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6B41A653D7914409857B46EF /* Entypo.ttf */; };
+		2A7E3F5C970841B3851E8545 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BCF5540D7FC4C7EA977F564 /* EvilIcons.ttf */; };
+		978D87F0F0C7414C9D800A00 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D873BEED54043C4A3E5877D /* Feather.ttf */; };
+		82E6C6FF0E934EAEABDDBEC2 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0E25A61F8553408ABAC8C46A /* FontAwesome.ttf */; };
+		C8074DE0E6B642FF9356BD56 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 93CD322DE8C64888B96FD2AD /* FontAwesome5_Brands.ttf */; };
+		0FF9083E1F8C4F158616810B /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 26DA118E74F648EAA3705330 /* FontAwesome5_Regular.ttf */; };
+		B6852E14E8754BF59FB7132C /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1883F898828F40E4B91422A9 /* FontAwesome5_Solid.ttf */; };
+		76AE4B2261694383B47FABAD /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDCF49A190A746EAB35D3CED /* Foundation.ttf */; };
+		B30BC53AEC8645FC9C486DEB /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F38B8F55401D409EB74E1B93 /* Ionicons.ttf */; };
+		4CEAE91BC5DB459981058587 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 911BA0ABB70546C49E4C5391 /* MaterialCommunityIcons.ttf */; };
+		D831BF391C8A4422BB4F83F8 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BF7CB938DAB440F1B7172894 /* MaterialIcons.ttf */; };
+		EE2E2A814BA446E18B6E3835 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 152F762E3EDF4C73A02603FF /* Octicons.ttf */; };
+		7F13A3214A824DF8B4E3D341 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BDEFE67A42A74224B78AFCA2 /* SimpleLineIcons.ttf */; };
+		5D41BF8552B942C5B27A98EC /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78A52CBCEEF24992AB9E4A12 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -320,6 +340,20 @@
 			remoteGlobalIDString = 358F4ED71D1E81A9004DF814;
 			remoteInfo = RCTBlob;
 		};
+		C72CC98821E1494500136527 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 146833FF1AC3E56700842450 /* React.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 83CBBA2D1A601D0E00E9B192;
+			remoteInfo = React;
+		};
+		C746EC4821E0E81200852181 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC3B4BC5A66C4A9F8A5F49C4 /* RNFirebase.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 134814201AA4EA6300B7C361;
+			remoteInfo = RNFirebase;
+		};
 		C761CC4521CEE43C0015AA49 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4273F87165164F8AACAFF30D /* RNCamera.xcodeproj */;
@@ -357,24 +391,58 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = alkomate_app/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = alkomate_app/main.m; sourceTree = "<group>"; };
 		146833FF1AC3E56700842450 /* React.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = React.xcodeproj; path = "../node_modules/react-native/React/React.xcodeproj"; sourceTree = "<group>"; };
+		149267F621C040F46B68673A /* libPods-alkomate_app-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-alkomate_app-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19735CFABC984800BF35FF95 /* line-awesome.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "line-awesome.woff"; path = "../assets/fonts/line-awesome.woff"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* alkomate_app-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alkomate_app-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* alkomate_app-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "alkomate_app-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EDC33CDE50A41CC9C082B6E /* line-awesome.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "line-awesome.svg"; path = "../assets/fonts/line-awesome.svg"; sourceTree = "<group>"; };
+		3080FE04676BB4F2187E9AA4 /* Pods-alkomate_app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_app.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_app/Pods-alkomate_app.debug.xcconfig"; sourceTree = "<group>"; };
+		3D118DC16A1F4441FFA511A6 /* libPods-alkomate_app.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-alkomate_app.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		40A2DB75C988895379F2401F /* Pods-alkomate_app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_app.release.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_app/Pods-alkomate_app.release.xcconfig"; sourceTree = "<group>"; };
 		4273F87165164F8AACAFF30D /* RNCamera.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNCamera.xcodeproj; path = "../node_modules/react-native-camera/ios/RNCamera.xcodeproj"; sourceTree = "<group>"; };
+		45801B762793DE7FC47B72D1 /* libPods-alkomate_app-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-alkomate_app-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4994225A7CC54F1C937942F0 /* lineawesome.svg */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = lineawesome.svg; path = ../assets/fonts/lineawesome.svg; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		62A01655E5E24BFBB0C24DC2 /* lineawesome.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = lineawesome.woff2; path = ../assets/fonts/lineawesome.woff2; sourceTree = "<group>"; };
 		6D5CF287B1D24890892A4EE5 /* line-awesome.woff2 */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "line-awesome.woff2"; path = "../assets/fonts/line-awesome.woff2"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		8CD22DF41519D168C34D8BCD /* Pods-alkomate_appTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_appTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_appTests/Pods-alkomate_appTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9CF178FD7F2BD08B2E2C8ECB /* libPods-alkomate_appTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-alkomate_appTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9FBE6D19268F457384B25557 /* libRNCamera.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNCamera.a; sourceTree = "<group>"; };
+		A61E188F54C14867958F7863 /* libRNFirebase.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNFirebase.a; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		B83BF63858603A2F2E58B8A9 /* Pods-alkomate_app-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_app-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_app-tvOS/Pods-alkomate_app-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		BC3B4BC5A66C4A9F8A5F49C4 /* RNFirebase.xcodeproj */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = "wrapper.pb-project"; name = RNFirebase.xcodeproj; path = "../node_modules/react-native-firebase/ios/RNFirebase.xcodeproj"; sourceTree = "<group>"; };
+		BC498A05A28FB3E0AC81D992 /* Pods-alkomate_app-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_app-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_app-tvOS/Pods-alkomate_app-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		C35874705E9E40F9999F8130 /* lineawesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = lineawesome.ttf; path = ../assets/fonts/lineawesome.ttf; sourceTree = "<group>"; };
+		C746EC4B21E0F55C00852181 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C7DAF35021E0FB7900EE910C /* FirebaseInstanceID */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseInstanceID; path = Pods/FirebaseInstanceID; sourceTree = "<group>"; };
+		C7DAF37921E0FB7900EE910C /* FirebaseCore */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseCore; path = Pods/FirebaseCore; sourceTree = "<group>"; };
+		C7DAF37A21E0FB7900EE910C /* FirebaseAnalytics */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseAnalytics; path = Pods/FirebaseAnalytics; sourceTree = "<group>"; };
+		C7DAF37B21E0FB7900EE910C /* Firebase */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Firebase; path = Pods/Firebase; sourceTree = "<group>"; };
 		D5CE2F54295B44CCB21A7C57 /* lineawesome.woff */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = lineawesome.woff; path = ../assets/fonts/lineawesome.woff; sourceTree = "<group>"; };
+		DEEB8C39D32CA114B7FB85A7 /* Pods-alkomate_appTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_appTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_appTests/Pods-alkomate_appTests.release.xcconfig"; sourceTree = "<group>"; };
+		E789B6D1E775760D6EF384DB /* Pods-alkomate_app-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_app-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_app-tvOSTests/Pods-alkomate_app-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EAFEEC03375143FC926E3A01 /* libRNGestureHandler.a */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = archive.ar; path = libRNGestureHandler.a; sourceTree = "<group>"; };
+		EF261BEC6F1C78EA04ED0EC9 /* Pods-alkomate_app-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-alkomate_app-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-alkomate_app-tvOSTests/Pods-alkomate_app-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		F7F0B5E8B85A4D6E9F0DC2BF /* line-awesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "line-awesome.ttf"; path = "../assets/fonts/line-awesome.ttf"; sourceTree = "<group>"; };
+		C0B84B835A124191953E5BFE /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6B41A653D7914409857B46EF /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7BCF5540D7FC4C7EA977F564 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D873BEED54043C4A3E5877D /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0E25A61F8553408ABAC8C46A /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		93CD322DE8C64888B96FD2AD /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		26DA118E74F648EAA3705330 /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1883F898828F40E4B91422A9 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDCF49A190A746EAB35D3CED /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F38B8F55401D409EB74E1B93 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		911BA0ABB70546C49E4C5391 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BF7CB938DAB440F1B7172894 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		152F762E3EDF4C73A02603FF /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		BDEFE67A42A74224B78AFCA2 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		78A52CBCEEF24992AB9E4A12 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -383,6 +451,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */,
+				BE7E5A43EDA19DB03ECDB4D8 /* libPods-alkomate_appTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,6 +473,8 @@
 				139FDEF61B0652A700C62182 /* libRCTWebSocket.a in Frameworks */,
 				4B2BC12B00074F97AFE6D003 /* libRNGestureHandler.a in Frameworks */,
 				B59B45B99F354D1DB1E15C8B /* libRNCamera.a in Frameworks */,
+				A3F44E6E09814B7FACA68081 /* libRNFirebase.a in Frameworks */,
+				E94B8E83472D0152142DF3AF /* libPods-alkomate_app.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +490,7 @@
 				2D02E4C61E0B4AEC006451C7 /* libRCTSettings-tvOS.a in Frameworks */,
 				2D02E4C71E0B4AEC006451C7 /* libRCTText-tvOS.a in Frameworks */,
 				2D02E4C81E0B4AEC006451C7 /* libRCTWebSocket-tvOS.a in Frameworks */,
+				26DCF5831CE14270F80FA7C6 /* libPods-alkomate_app-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,6 +499,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */,
+				F4828809DC00731CE3CE692D /* libPods-alkomate_app-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -515,6 +588,7 @@
 		13B07FAE1A68108700A75B9A /* alkomate_app */ = {
 			isa = PBXGroup;
 			children = (
+				C746EC4B21E0F55C00852181 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -560,6 +634,21 @@
 				C35874705E9E40F9999F8130 /* lineawesome.ttf */,
 				D5CE2F54295B44CCB21A7C57 /* lineawesome.woff */,
 				62A01655E5E24BFBB0C24DC2 /* lineawesome.woff2 */,
+				C0B84B835A124191953E5BFE /* AntDesign.ttf */,
+				6B41A653D7914409857B46EF /* Entypo.ttf */,
+				7BCF5540D7FC4C7EA977F564 /* EvilIcons.ttf */,
+				7D873BEED54043C4A3E5877D /* Feather.ttf */,
+				0E25A61F8553408ABAC8C46A /* FontAwesome.ttf */,
+				93CD322DE8C64888B96FD2AD /* FontAwesome5_Brands.ttf */,
+				26DA118E74F648EAA3705330 /* FontAwesome5_Regular.ttf */,
+				1883F898828F40E4B91422A9 /* FontAwesome5_Solid.ttf */,
+				BDCF49A190A746EAB35D3CED /* Foundation.ttf */,
+				F38B8F55401D409EB74E1B93 /* Ionicons.ttf */,
+				911BA0ABB70546C49E4C5391 /* MaterialCommunityIcons.ttf */,
+				BF7CB938DAB440F1B7172894 /* MaterialIcons.ttf */,
+				152F762E3EDF4C73A02603FF /* Octicons.ttf */,
+				BDEFE67A42A74224B78AFCA2 /* SimpleLineIcons.ttf */,
+				78A52CBCEEF24992AB9E4A12 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -567,7 +656,15 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C7DAF37B21E0FB7900EE910C /* Firebase */,
+				C7DAF37A21E0FB7900EE910C /* FirebaseAnalytics */,
+				C7DAF37921E0FB7900EE910C /* FirebaseCore */,
+				C7DAF35021E0FB7900EE910C /* FirebaseInstanceID */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
+				3D118DC16A1F4441FFA511A6 /* libPods-alkomate_app.a */,
+				149267F621C040F46B68673A /* libPods-alkomate_app-tvOS.a */,
+				45801B762793DE7FC47B72D1 /* libPods-alkomate_app-tvOSTests.a */,
+				9CF178FD7F2BD08B2E2C8ECB /* libPods-alkomate_appTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -607,6 +704,7 @@
 				139FDEE61B06529A00C62182 /* RCTWebSocket.xcodeproj */,
 				071BFAE06E72430498C53717 /* RNGestureHandler.xcodeproj */,
 				4273F87165164F8AACAFF30D /* RNCamera.xcodeproj */,
+				BC3B4BC5A66C4A9F8A5F49C4 /* RNFirebase.xcodeproj */,
 			);
 			name = Libraries;
 			sourceTree = "<group>";
@@ -630,6 +728,7 @@
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				193C1348DD764100B51B0E47 /* Resources */,
 				C761CC1A21CEE4380015AA49 /* Recovered References */,
+				FE0346B34714662C60BC8E54 /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -656,11 +755,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		C746EC1F21E0E81200852181 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C746EC4921E0E81200852181 /* libRNFirebase.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C761CC1A21CEE4380015AA49 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
 				EAFEEC03375143FC926E3A01 /* libRNGestureHandler.a */,
 				9FBE6D19268F457384B25557 /* libRNCamera.a */,
+				A61E188F54C14867958F7863 /* libRNFirebase.a */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -681,6 +789,21 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		FE0346B34714662C60BC8E54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3080FE04676BB4F2187E9AA4 /* Pods-alkomate_app.debug.xcconfig */,
+				40A2DB75C988895379F2401F /* Pods-alkomate_app.release.xcconfig */,
+				B83BF63858603A2F2E58B8A9 /* Pods-alkomate_app-tvOS.debug.xcconfig */,
+				BC498A05A28FB3E0AC81D992 /* Pods-alkomate_app-tvOS.release.xcconfig */,
+				E789B6D1E775760D6EF384DB /* Pods-alkomate_app-tvOSTests.debug.xcconfig */,
+				EF261BEC6F1C78EA04ED0EC9 /* Pods-alkomate_app-tvOSTests.release.xcconfig */,
+				8CD22DF41519D168C34D8BCD /* Pods-alkomate_appTests.debug.xcconfig */,
+				DEEB8C39D32CA114B7FB85A7 /* Pods-alkomate_appTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -688,6 +811,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "alkomate_appTests" */;
 			buildPhases = (
+				03AB9EDE04746A9054F5E345 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -706,14 +830,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "alkomate_app" */;
 			buildPhases = (
+				3C36C003DC95432D99191FF8 /* [CP] Check Pods Manifest.lock */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				53C92B93F062EF4D801B02D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C72CC98921E1494500136527 /* PBXTargetDependency */,
 			);
 			name = alkomate_app;
 			productName = "Hello World";
@@ -724,10 +851,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "alkomate_app-tvOS" */;
 			buildPhases = (
+				45C814EC28AB01B3E0B1D9D1 /* [CP] Check Pods Manifest.lock */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
 				2D02E4791E0B4A5D006451C7 /* Resources */,
 				2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */,
+				4D67A5BAA853DB8E77D840C2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -742,6 +871,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "alkomate_app-tvOSTests" */;
 			buildPhases = (
+				DEB4A676100E0ADE0AE94F55 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -848,6 +978,10 @@
 				{
 					ProductGroup = C761CC4221CEE43B0015AA49 /* Products */;
 					ProjectRef = 4273F87165164F8AACAFF30D /* RNCamera.xcodeproj */;
+				},
+				{
+					ProductGroup = C746EC1F21E0E81200852181 /* Products */;
+					ProjectRef = BC3B4BC5A66C4A9F8A5F49C4 /* RNFirebase.xcodeproj */;
 				},
 				{
 					ProductGroup = C761CC4021CEE43B0015AA49 /* Products */;
@@ -1124,6 +1258,13 @@
 			remoteRef = ADBDB9261DFEBF0700ED6528 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		C746EC4921E0E81200852181 /* libRNFirebase.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRNFirebase.a;
+			remoteRef = C746EC4821E0E81200852181 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 		C761CC4621CEE43C0015AA49 /* libRNCamera.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -1158,6 +1299,22 @@
 				6181F7F7342C47AC8FEF298E /* lineawesome.ttf in Resources */,
 				3FC866E450A94C5ABAC00F45 /* lineawesome.woff in Resources */,
 				F54BC532EBF14026AF66F55A /* lineawesome.woff2 in Resources */,
+				C746EC4C21E0F55C00852181 /* GoogleService-Info.plist in Resources */,
+				5F8A716F4C454DCFACBCF9DC /* AntDesign.ttf in Resources */,
+				F9831BBA258C47D5A6E07654 /* Entypo.ttf in Resources */,
+				2A7E3F5C970841B3851E8545 /* EvilIcons.ttf in Resources */,
+				978D87F0F0C7414C9D800A00 /* Feather.ttf in Resources */,
+				82E6C6FF0E934EAEABDDBEC2 /* FontAwesome.ttf in Resources */,
+				C8074DE0E6B642FF9356BD56 /* FontAwesome5_Brands.ttf in Resources */,
+				0FF9083E1F8C4F158616810B /* FontAwesome5_Regular.ttf in Resources */,
+				B6852E14E8754BF59FB7132C /* FontAwesome5_Solid.ttf in Resources */,
+				76AE4B2261694383B47FABAD /* Foundation.ttf in Resources */,
+				B30BC53AEC8645FC9C486DEB /* Ionicons.ttf in Resources */,
+				4CEAE91BC5DB459981058587 /* MaterialCommunityIcons.ttf in Resources */,
+				D831BF391C8A4422BB4F83F8 /* MaterialIcons.ttf in Resources */,
+				EE2E2A814BA446E18B6E3835 /* Octicons.ttf in Resources */,
+				7F13A3214A824DF8B4E3D341 /* SimpleLineIcons.ttf in Resources */,
+				5D41BF8552B942C5B27A98EC /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1193,6 +1350,28 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		03AB9EDE04746A9054F5E345 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alkomate_appTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1206,6 +1385,116 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+		};
+		3C36C003DC95432D99191FF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alkomate_app-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		45C814EC28AB01B3E0B1D9D1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alkomate_app-tvOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D67A5BAA853DB8E77D840C2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-alkomate_app-tvOS/Pods-alkomate_app-tvOS-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alkomate_app-tvOS/Pods-alkomate_app-tvOS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53C92B93F062EF4D801B02D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-alkomate_app/Pods-alkomate_app-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-alkomate_app/Pods-alkomate_app-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB4A676100E0ADE0AE94F55 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-alkomate_app-tvOSTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1257,6 +1546,11 @@
 			target = 2D02E47A1E0B4A5D006451C7 /* alkomate_app-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
+		C72CC98921E1494500136527 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = React;
+			targetProxy = C72CC98821E1494500136527 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1274,6 +1568,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8CD22DF41519D168C34D8BCD /* Pods-alkomate_appTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				DEVELOPMENT_TEAM = 7Z5UNWP9KY;
@@ -1285,12 +1580,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = alkomate_appTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1306,6 +1603,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEEB8C39D32CA114B7FB85A7 /* Pods-alkomate_appTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -1314,12 +1612,14 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = alkomate_appTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1335,6 +1635,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3080FE04676BB4F2187E9AA4 /* Pods-alkomate_app.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1344,6 +1645,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = alkomate_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1360,6 +1662,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 40A2DB75C988895379F2401F /* Pods-alkomate_app.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1368,6 +1671,7 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = alkomate_app/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -1384,6 +1688,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B83BF63858603A2F2E58B8A9 /* Pods-alkomate_app-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1399,11 +1704,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "alkomate_app-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1421,6 +1728,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC498A05A28FB3E0AC81D992 /* Pods-alkomate_app-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -1436,11 +1744,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "alkomate_app-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1458,6 +1768,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E789B6D1E775760D6EF384DB /* Pods-alkomate_app-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1472,11 +1783,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "alkomate_app-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);
@@ -1494,6 +1807,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF261BEC6F1C78EA04ED0EC9 /* Pods-alkomate_app-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -1508,11 +1822,13 @@
 					"$(inherited)",
 					"$(SRCROOT)/../node_modules/react-native-gesture-handler/ios/**",
 					"$(SRCROOT)/../node_modules/react-native-camera/ios/**",
+					"$(SRCROOT)/../node_modules/react-native-firebase/ios/RNFirebase/**",
 				);
 				INFOPLIST_FILE = "alkomate_app-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
+					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 					"\"$(SRCROOT)/$(TARGET_NAME)\"",
 				);

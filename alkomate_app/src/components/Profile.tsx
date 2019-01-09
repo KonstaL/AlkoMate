@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { View, StyleSheet, Text, AsyncStorage, Button } from 'react-native';
 import { NavigationScreenProp } from 'react-navigation';
+import firebase from 'react-native-firebase';
+
 
 export interface ProfileProps {
     navigation?: NavigationScreenProp<any,any> // Injected in index.ts
@@ -18,7 +20,7 @@ export default class ProfileComponent extends React.Component<ProfileProps, Prof
 
 
   signOutAsync = async () => {
-    await AsyncStorage.clear();
+    await firebase.auth,this.signOutAsync()
     this.props.navigation!.navigate('Auth');
   };
 

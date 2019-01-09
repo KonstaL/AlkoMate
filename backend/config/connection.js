@@ -1,3 +1,5 @@
+var parse = require('pg-connection-string').parse;
+
 const development = {
   database: 'alkomate',
   username: 'alkomate',
@@ -14,14 +16,19 @@ const testing = {
   dialect: 'sqlite' || 'mysql' || 'postgres',
 };
 
-const production = {
-  database: process.env.DB_NAME,
-  username: process.env.DB_USER,
-  password: process.env.DB_PASS,
-  host: process.env.DB_HOST,
-  dialect: 'postgres',
-};
-
+let production = {};
+if(process.env.DATABASE_URL) {
+  const parsedData = parse(process.env.DATABASE_URL);
+  
+  production = {
+    database: parsedData.database,
+    username: parsedData.user,
+    password: parsedData.password,
+    host: parsedData.host,
+    dialect: 'postgres',
+  };
+  
+}
 module.exports = {
   development,
   testing,

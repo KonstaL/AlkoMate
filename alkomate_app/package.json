@@ -11,7 +11,12 @@
     "react": "16.6.1",
     "react-native": "0.57.7",
     "react-native-camera": "^1.6.4",
+    "react-native-elements": "^0.19.1",
+    "react-native-firebase": "^5.1.1",
     "react-native-gesture-handler": "^1.0.10",
+    "react-native-google-signin": "^1.0.2",
+    "react-native-root-toast": "^3.0.2",
+    "react-native-vector-icons": "^6.1.0",
     "react-navigation": "^3.0.7"
   },
   "devDependencies": {
@@ -32,5 +37,6 @@
     "assets": [
       "./assets/fonts/"
     ]
-  }
+  },
+  "proxy": "192.161.1.110:8000"
 }

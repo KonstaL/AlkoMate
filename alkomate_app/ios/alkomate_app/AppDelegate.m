@@ -5,6 +5,12 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+// Manually added dependencies
+
+#import <Firebase.h>
+#import <RNGoogleSignin/RNGoogleSignin.h>
+
+
 #import "AppDelegate.h"
 
 #import <React/RCTBundleURLProvider.h>
@@ -14,6 +20,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+  [FIRApp configure];
   NSURL *jsCodeLocation;
 
   jsCodeLocation = [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index" fallbackResource:nil];
@@ -30,6 +37,13 @@
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(nonnull NSURL *)url options:(nonnull NSDictionary<NSString *,id> *)options {
+  return [RNGoogleSignin application:application
+                             openURL:url
+                          sourceApplication:options[UIApplicationOpenURLOptionsSourceApplicationKey]
+                          annotation:options[UIApplicationOpenURLOptionsAnnotationKey]];
 }
 
 @end

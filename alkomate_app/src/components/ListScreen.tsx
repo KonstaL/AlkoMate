@@ -30,7 +30,7 @@ export default class ListScreen extends Component<IProps, IState> {
   }
 
   componentDidMount() {
-    fetch('http://localhost:8000/public/beverages')
+    fetch('/public/beverages')
       .then(res => res.json())
       .then(res => res.beverages)
       .then(res => this.setState({beverages: res}));

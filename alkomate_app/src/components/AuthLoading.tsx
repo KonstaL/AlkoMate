@@ -2,6 +2,7 @@ import * as React from 'react';
 import { View, StyleSheet, Text, AsyncStorage, ActivityIndicator, StatusBar } from 'react-native';
 import { NavigationNavigator, NavigationScreenProp } from 'react-navigation';
 import { UserToken } from '../models/UserToken';
+import firebase from 'react-native-firebase';
 
 export interface AuthLoadingProps {
     navigation?: NavigationScreenProp<any,any> // Injected in index.ts
@@ -18,6 +19,15 @@ export default class AuthLoadingComponent extends React.Component<AuthLoadingPro
     
     // Fetch the token from storage then navigate to our appropriate place
     bootstrapAsync = async () => {
+        const fireUser = await firebase.auth().currentUser;
+        const fireUserString = await AsyncStorage.getItem('fireUser');
+
+
+        console.log('Current fireuser from fire:', fireUser);
+        if(fireUserString) {
+            console.log('Current fireuser from async', JSON.parse(fireUserString));
+        }
+       
         const userTokenString = await AsyncStorage.getItem('userToken');
     
         const userToken = userTokenString 

@@ -1,57 +1,47 @@
 import React, { Component } from "react";
-import { Text, SafeAreaView, View, TouchableOpacity, StyleSheet } from "react-native";
+import { Text, SafeAreaView, View, TouchableOpacity, StyleSheet, Modal, Alert, Button } from "react-native";
 import ListScreen from "./ListScreen";
-import { RNCamera } from 'react-native-camera';
+import Toast from "react-native-root-toast";
+import { DrinkService } from "../services/DrinkService";
+import { iid } from "react-native-firebase";
+import { NavigationScreenProp } from "react-navigation";
 
 interface Props {
+    navigation?: NavigationScreenProp<any,any> // Injected in index.ts
 
 }
 
-export default class App extends Component<Props> {
-    camera?: RNCamera | null;
+interface State {
 
+}
+
+export default class App extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
-        this.takePicture = this.takePicture.bind(this)
+
+        this.state = {
+           
+        }
+       this.toBarcodeScreen = this.toBarcodeScreen.bind(this);
     }
     render() {
         return(
             <SafeAreaView style={styles.container}>
-                <RNCamera
-                    ref={ref => {
-                        this.camera = ref;
-                    }}
-                    style = {styles.preview}
-                    type={RNCamera.Constants.Type.back}
-                    flashMode={RNCamera.Constants.FlashMode.on}
-                    permissionDialogTitle={'Permission to use camera'}
-                    permissionDialogMessage={'We need your permission to use your camera phone'}
-                    onBarCodeRead={barCode => console.log('barcode read',barCode )}
-                   
-                />
-                <View style={{flex: 0, flexDirection: 'row', justifyContent: 'center',}}>
-                    <TouchableOpacity
-                        onPress={this.takePicture}
-                        style = {styles.capture}
-                    >
-                        <Text style={{fontSize: 14}}> SNAP </Text>
-                    </TouchableOpacity>
-                </View>
+               <Button title="Go snap a bar code" 
+                onPress={this.toBarcodeScreen} />
             </SafeAreaView>
         )
     }
 
+
+    toBarcodeScreen() {
+        this.props.navigation!.push('BarcodeScanning');
+
+    }
+
+   
+
     
-    takePicture = async function() {
-        console.log('picture taken');
-        /*
-        if (this.camera) {
-            const options = { quality: 0.5, base64: true };
-            const data = await this.camera.takePictureAsync(options)
-            console.log(data.uri);
-        }
-        */
-    };
 }
     
 const styles = StyleSheet.create({

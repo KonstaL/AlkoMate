@@ -5,6 +5,7 @@ import DetailScreen from '../components/BeverageScreen';
 import SignInScreen from '../components/SignInScreen';
 import AuthLoadingComponent from '../components/AuthLoading';
 import ProfileComponent from '../components/Profile';
+import BarcodeScreen from '../components/BarcodeScreen';
 
 const HomeStack = createStackNavigator({
   Home: {
@@ -18,7 +19,8 @@ const DrinkStack = createStackNavigator({
   },
   Details: {
     screen: DetailScreen,
-  }
+  },
+  BarcodeScanning: BarcodeScreen
 });
 
 const ProfileStack = createStackNavigator({
@@ -35,7 +37,7 @@ const TabNavigator = createBottomTabNavigator({
 
 const AuthStack = createStackNavigator({
    SignIn: SignInScreen 
-});
+}, { headerMode: 'none' });
 
 const AppContainer =  createAppContainer(createSwitchNavigator(
   {
