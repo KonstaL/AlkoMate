@@ -32,10 +32,8 @@ const BeverageController = () => {
 
   const addOne = async (req, res) => {
     try {
-
-      const beverage = req.body;
-      
-
+      const beverage = JSON.parse(req.body);
+    
       if (isValidBeverage(beverage)) {
         const resBeverage = await Beverage.create(beverage);
         return res.status(201).json(resBeverage); 

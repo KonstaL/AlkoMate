@@ -59,7 +59,6 @@ export default class BarcodeScreen extends Component<AppProps, any> {
         const matchArr = myRe.exec(barcode.type);
         
         const isEANType = matchArr ? matchArr.length !== 0 : false
-        console.log(isEANType);
         if(isEANType && !this.loadingDrink)  {
             this.loadingDrink = true; // This.setState is too slow, so using syncronous code instead
             let drink;
