@@ -20,22 +20,7 @@ export default class AuthLoadingComponent extends React.Component<AuthLoadingPro
     // Fetch the token from storage then navigate to our appropriate place
     bootstrapAsync = async () => {
         const fireUser = await firebase.auth().currentUser;
-        const fireUserString = await AsyncStorage.getItem('fireUser');
-
-
-        console.log('Current fireuser from fire:', fireUser);
-        if(fireUserString) {
-            console.log('Current fireuser from async', JSON.parse(fireUserString));
-        }
-       
-        const userTokenString = await AsyncStorage.getItem('userToken');
-    
-        const userToken = userTokenString 
-            ? JSON.parse(userTokenString) as UserToken
-            : undefined
-        // This will switch to the App screen or Auth screen and this loading
-        // screen will be unmounted and thrown away.
-        this.props.navigation!.navigate(userToken && userToken.authDone ? 'App' : 'Auth');
+        this.props.navigation!.navigate(fireUser !== null ? 'App' : 'Auth');
     };
     
     // Render any loading content that you like here

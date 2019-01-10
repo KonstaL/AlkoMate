@@ -8,9 +8,10 @@ import { NavigationScreenProp } from "react-navigation";
 
 export interface AppProps {
     navigation?: NavigationScreenProp<any,any> // Injected in index.ts
-
 }
-
+export interface AppState {
+    foundEAN: string;
+}
 export default class BarcodeScreen extends Component<AppProps, any> {
     camera?: RNCamera | null;
     loadingDrink: boolean = false;
@@ -18,6 +19,10 @@ export default class BarcodeScreen extends Component<AppProps, any> {
 
     constructor(props: AppProps) {
         super(props);
+
+        this.state = {
+            foundEAN: '',
+        }
 
         this.barcodeRead = this.barcodeRead.bind(this);
         this.promptDrinkAdding = this.promptDrinkAdding.bind(this);
@@ -63,6 +68,7 @@ export default class BarcodeScreen extends Component<AppProps, any> {
             if (drink) {
                 console.log('drink found');
             } else {
+                this.setState({foundEAN: barcode.data})
                 this.promptDrinkAdding();
             }
             
@@ -85,9 +91,8 @@ export default class BarcodeScreen extends Component<AppProps, any> {
             `Looks like you found a beverage that no one else has added yet!
             Do you want to add the beverage so that everyone can find it?`,
             [
-            {text: 'Ask me later', onPress: () => console.log('Ask me later pressed')},
-            {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
-            {text: 'OK', onPress: () => console.log('OK Pressed')},
+                {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'cancel'},
+                {text: 'OK', onPress: () => this.props.navigation!.navigate('NewBeverage', {ean: this.state.foundEAN})},
             ],
             { cancelable: false }
         )

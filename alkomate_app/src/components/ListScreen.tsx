@@ -5,6 +5,8 @@ import FlatComponent from './FlatComponent';
 
 import {Beverage} from '../models/Beverage';
 import { NavigationScreenProp } from 'react-navigation';
+import { SearchBar, Icon } from 'react-native-elements';
+import { DrinkService } from '../services/DrinkService';
 
 interface IState {
     beverages: Beverage[];
@@ -16,9 +18,6 @@ interface IProps {
 }
 
 export default class ListScreen extends Component<IProps, IState> {
-  static navigationOptions = {
-    title: 'Users',
-  }
 
   constructor(props: IProps) {
     super(props);
@@ -30,9 +29,7 @@ export default class ListScreen extends Component<IProps, IState> {
   }
 
   componentDidMount() {
-    fetch('/public/beverages')
-      .then(res => res.json())
-      .then(res => res.beverages)
+    DrinkService.Instance.getBeverages()
       .then(res => this.setState({beverages: res}));
   }
 
@@ -46,6 +43,20 @@ export default class ListScreen extends Component<IProps, IState> {
     return (
       <View style={styles.container}>
         <Text style={styles.title}>Beverages</Text>
+        <View style={styles.searchContainer}>
+        
+        <SearchBar
+          onChangeText={() => console.log('onChange')}
+          onClearText={() => console.log('onChange')}
+          placeholder='beverage name..' 
+          containerStyle={{flexGrow: 1}}/>
+        <Icon 
+          type='material-community'
+          name='barcode-scan'
+          containerStyle={{padding: 10 }} 
+          onPress={() => this.props.navigation!.navigate('BarcodeScanning')}
+          />
+        </View>
         <FlatList
           data={this.state.beverages}
           renderItem={({item}) => <FlatComponent beverage={item} navigate={this.toDetailView}/>}
@@ -57,10 +68,17 @@ export default class ListScreen extends Component<IProps, IState> {
 
 const styles = StyleSheet.create({
   container: {
-    padding: 10,  
+    //padding: 10,  
     backgroundColor: '#F5FCFF',
   },
   title: {
+    textAlign: 'center',
     fontSize: 40,
+    padding: 5,
+  },
+  searchContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+
   }
 });

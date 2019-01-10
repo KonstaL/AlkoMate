@@ -82,7 +82,8 @@ export default class SignInScreen extends React.Component<AppProps, AppState> {
               disabled={this.state.loginInProgress} 
             />
             <Button 
-              backgroundColor="#00000000"
+              containerViewStyle={{ width: 312, height: 48 }}
+              backgroundColor="#00000070"
               title="Sign in with email 📫"
               onPress={this.signInAnonymously}
               color="#FFFFFF" 
@@ -103,21 +104,17 @@ export default class SignInScreen extends React.Component<AppProps, AppState> {
 
   signInAnonymously = async () => {
     this.setState({loginInProgress: true})
+
     try {
-      await firebase.auth().signInAnonymously()
-      const fireUser = firebase.auth().currentUser;
-      
-      await AsyncStorage.setItem('fireUser', JSON.stringify(fireUser));
+      await firebase.auth().signInAnonymously()      
+      this.setState({loginInProgress: false})
       this.props.navigation!.navigate('App');
-      
-    } catch(e) {
+    } catch (e) {
       console.error('error in fireauth', e);
       Toast.show('Something went wrong while trying to authenticate :(', {
         duration: Toast.durations.LONG,
-      });
+      });  
     }
-    this.setState({loginInProgress: false})
-
   }
 
   signInGoogle = async () => {
@@ -132,40 +129,36 @@ export default class SignInScreen extends React.Component<AppProps, AppState> {
       // create a new firebase credential with the token
       const credential = firebase.auth.GoogleAuthProvider.credential(data.idToken, data.accessToken!)
       // login with credential
-      const currentUser = await firebase.auth().signInAndRetrieveDataWithCredential(credential);
-  
-      console.info(JSON.stringify(currentUser.user.toJSON()));
+      await firebase.auth().signInWithCredential(credential);
+      this.setState({loginInProgress: false})
+      this.props.navigation!.navigate('App');
+
     } catch (e) {
+      this.setState({loginInProgress: false})
       console.log('Error in google login',  e);
       Toast.show('Something went wrong while trying to authenticate :(', {
         duration: Toast.durations.LONG,
       });
     }
-
-    this.setState({loginInProgress: false})
   }
 
   signInEmail = async () => {
     this.setState({loginInProgress: true})
 
     try {
-
+      // Todo implement this
     } catch (e) {
       console.log('Error in email login', e);
       Toast.show('Something went wrong while trying to authenticate :(', {
         duration: Toast.durations.LONG,
       });
     }
-
-
     this.setState({loginInProgress: false})
   }
 }
 
 const styles = StyleSheet.create({
   container: {
-   //paddingTop: 100,
-    //backgroundColor: '#F5FCFF',
     textAlign: 'center',
     width: '100%',
     height: '100%',
