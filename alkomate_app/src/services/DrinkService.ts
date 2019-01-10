@@ -1,4 +1,5 @@
 import { Beverage } from "../models/Beverage";
+import { iid } from "react-native-firebase";
 
 export class DrinkService {
     private static _instance: DrinkService;
@@ -27,8 +28,20 @@ export class DrinkService {
 
     async addBeverage(beverage: Beverage): Promise<Beverage | undefined> {
         console.log('posting this', JSON.stringify(beverage))
-        return fetch(`${DrinkService.baseUrl}/public/beverages/`, { method: 'POST', body: JSON.stringify(beverage) })
-            .then(res => res.json())
+        return fetch(`${DrinkService.baseUrl}/public/beverages/`, { 
+            method: 'POST',
+            body: JSON.stringify(beverage),
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+              },
+         })
+            .then(res => {
+                if(res.status === 201) {
+                    return res.json();
+                }  
+                throw new Error('Not a valid drink');
+            })
             .catch(err => console.warn('error when posting drink', err));
     }
 }

@@ -53,15 +53,14 @@ export default class NewBeverageScreen extends React.Component<AppProps, any> {
         ean: this.props.navigation!.state.params.ean,
         name: this.state.name,
         brand: this.state.brand,
-        size: Number(this.state.size) / 1000,
-        strength: Number(this.state.strength) / 1000,
+        size: Math.floor(Number(this.state.size) * 100),
+        strength: Math.floor(Number(this.state.strength) * 100),
         country: '',
         views:0,
       }
       
       let res = await DrinkService.Instance.addBeverage(beverage);
-      console.log('vastaus', res);
-    } else {
+      this.props.navigation!.push('Details', {beverage: res});
       Toast.show('Invalid values!', {})
     }
   }

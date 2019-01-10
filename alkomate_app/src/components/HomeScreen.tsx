@@ -18,27 +18,20 @@ interface State {
 export default class App extends Component<Props, State> {
     constructor(props: Props) {
         super(props);
-
-        this.state = {
-           
-        }
-       this.toBarcodeScreen = this.toBarcodeScreen.bind(this);
     }
+       
     render() {
         return(
             <SafeAreaView style={styles.container}>
-               <Button title="Go snap a bar code" 
-                onPress={this.toBarcodeScreen} />
+              <Text>This area is not really implemented :)</Text>
+              <Text>Todays recommendations</Text>
+              <Text>Activity</Text>
             </SafeAreaView>
         )
     }
 
 
-    toBarcodeScreen() {
-        this.props.navigation!.push('BarcodeScanning');
-
-    }
-
+ 
    
 
     
