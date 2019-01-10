@@ -32,7 +32,8 @@ const BeverageController = () => {
 
   const addOne = async (req, res) => {
     try {
-      const beverage = JSON.parse(req.body);
+      console.log('body', req.body);
+      const beverage = req.body;
     
       if (isValidBeverage(beverage)) {
         const resBeverage = await Beverage.create(beverage);
@@ -51,7 +52,7 @@ const BeverageController = () => {
     //Check if EAN is valid and so on
     const nameValid = !!beverage.name && beverage.name !== '';
     const brandValid = !!beverage.brand && beverage.brand !== '' 
-    const sizeValid = !!beverage.size && Number(this.state.size) != NaN;
+    const sizeValid = !!beverage.size && Number(beverage.size) != NaN;
     const strengthValid = !!beverage.strength && Number(beverage.strength) != NaN;
     
     return nameValid && brandValid && sizeValid && strengthValid;

@@ -32,7 +32,6 @@ export default class FlatComponent extends Component<IProps, IState> {
             ? <Image 
                 source={{uri: this.props.beverage.imageUrl!}}
                 style={{width: 66, height: 66}}
-
                 />
             : <Text style={{ fontFamily: 'lineawesome', fontSize: 40 }}>&#xf13d;</Text>
     }

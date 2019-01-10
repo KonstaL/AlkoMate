@@ -44,6 +44,8 @@ export default class ListScreen extends Component<IProps, IState> {
       <View style={styles.container}>
         <Text style={styles.title}>Beverages</Text>
         <View style={styles.searchContainer}>
+
+        
         
         <SearchBar
           lightTheme
