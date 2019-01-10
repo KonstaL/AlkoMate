@@ -2,7 +2,7 @@ import { Beverage } from "../models/Beverage";
 
 export class DrinkService {
     private static _instance: DrinkService;
-    static baseUrl = 'https://alkomate-backend.herokuapp.com/';
+    static baseUrl = 'https://alkomate-backend.herokuapp.com:443';
 
     private constructor() {}
 
@@ -26,6 +26,7 @@ export class DrinkService {
     }
 
     async addBeverage(beverage: Beverage): Promise<Beverage | undefined> {
+        console.log('posting this', JSON.stringify(beverage))
         return fetch(`${DrinkService.baseUrl}/public/beverages/`, { method: 'POST', body: JSON.stringify(beverage) })
             .then(res => res.json())
             .catch(err => console.warn('error when posting drink', err));

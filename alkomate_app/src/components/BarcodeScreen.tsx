@@ -55,30 +55,31 @@ export default class BarcodeScreen extends Component<AppProps, any> {
         );
     }
     async barcodeRead(barcode: {type: string, data: string}) {
-        Toast.show('cmon', {})
-        console.log('cmon');
-        console.log('whole barcode', barcode);
-        const isEANType = barcode.type === 'org.gs1.EAN-13' || barcode.type === 'EAN_13'
-
+        const myRe = /(EAN[_-]13)/g;
+        const matchArr = myRe.exec(barcode.type);
+        
+        const isEANType = matchArr ? matchArr.length !== 0 : false
+        console.log(isEANType);
         if(isEANType && !this.loadingDrink)  {
-            console.log('testi', this.loadingDrink);
             this.loadingDrink = true; // This.setState is too slow, so using syncronous code instead
-            let drink = await DrinkService.Instance.getBeverageById(barcode.data)
+            let drink;
             
-            if (drink) {
-                console.log('drink found');
+            try {
+                drink = await DrinkService.Instance.getBeverageById(barcode.data)
+            } catch (e) {
+                console.error(e);
+                this.loadingDrink = false;
+            } 
+            if (drink && Object.keys(drink).length !== 0) {
+                console.log('drink found', drink);
+                this.props.navigation!.push('Details', {beverage: drink});
             } else {
                 this.setState({foundEAN: barcode.data})
                 this.promptDrinkAdding();
             }
             
-            console.log('ean 13', barcode.data);
             this.loadingDrink = false;
-            Toast.show('async func done', {
-                duration: Toast.durations.SHORT,
-            });
         } else {
-            console.log('barcode', barcode)
             Toast.show('Unkown barcode' +  barcode.type, {
                 duration: Toast.durations.SHORT,
             });

@@ -51,7 +51,12 @@ const BeverageController = () => {
 
   const isValidBeverage = (beverage) => {
     //Check if EAN is valid and so on
-    return true;
+    const nameValid = !!beverage.name && beverage.name !== '';
+    const brandValid = !!beverage.brand && beverage.brand !== '' 
+    const sizeValid = !!beverage.size && Number(this.state.size) != NaN;
+    const strengthValid = !!beverage.strength && Number(beverage.strength) != NaN;
+    
+    return nameValid && brandValid && sizeValid && strengthValid;
   }
 
 

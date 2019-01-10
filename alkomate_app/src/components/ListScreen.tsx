@@ -46,6 +46,7 @@ export default class ListScreen extends Component<IProps, IState> {
         <View style={styles.searchContainer}>
         
         <SearchBar
+          lightTheme
           onChangeText={() => console.log('onChange')}
           onClearText={() => console.log('onChange')}
           placeholder='beverage name..' 
